@@ -1,0 +1,74 @@
+// bower:scss
+// endbower
+
+// Libraries
+@import "../bower_components/susy/sass/susy";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+// Utility
+@import "fonts";
+@import "colors";
+@import "mixins";
+@import "grid";
+@import "bxslider";
+
+// Partials
+@import "social";
+@import "header";
+@import "footer";
+@import "beerstage";
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #fafafa url(../images/planks.jpg) repeat-y;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $color-cream;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -140px; 
+}
+.wrapper:after {
+  content: "";
+  display: block;
+}
+.footer, .wrapper:after {
+  height: 140px; 
+}
+
+.container {
+  @include container($pageMaxWidth);
+  .content {
+    margin: 0 30px;
+  }
+}
+
+.header { z-index: 100; }
+.main-content { z-index: 50; margin-top: 30px;}
+
+.title {
+  margin: 0 auto 20px;
+    text-align: center;
+  img {
+
+  }
+}
+

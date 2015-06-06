@@ -1,0 +1,28 @@
+.bx-wrapper {
+  margin-bottom: 0px;
+  .bx-viewport {
+    border: 5px solid $color-cream;
+    left: 0;
+  }
+  .bx-loading {
+    background-image: url(../images/bx_loader.png);
+  }
+
+  .bx-prev, .bx-next, .bx-controls-auto .bx-start, .bx-controls-auto .bx-stop {
+    background-image: url(../images/controls.png);
+  }
+
+  .bx-pager.bx-default-pager {
+    position: relative;
+    top: -50px;
+  }
+
+  .bx-pager.bx-default-pager a {
+    background: rgba($color-cream, .6);
+  }
+
+  .bx-pager.bx-default-pager a:hover,
+  .bx-pager.bx-default-pager a.active {
+    background: $color-cream;
+  }
+}

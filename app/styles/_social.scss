@@ -1,0 +1,24 @@
+ul.social {
+  @include inline-list;
+
+  li {
+    background-color: $color-dark-green;
+    display: inline-block;
+    padding: 5px 5px 0;
+    margin: 0px 12px 0 0;
+    border: 2px solid $color-cream;
+    width: 35px;
+    height: 35px;
+    color: $color-cream;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
+    a {
+      color: $color-cream;
+    }
+
+    &:last-of-type {
+      margin-right: 0px;
+    }
+  }
+}

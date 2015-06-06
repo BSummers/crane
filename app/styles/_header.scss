@@ -1,0 +1,79 @@
+
+/*
+* HEADER
+*/
+
+.header {
+  color: $color-cream;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
+  a {
+    color: $color-cream;
+    text-decoration: none;
+  }
+
+  .top-nav {
+    background-color: $color-dark-green;
+    text-align: right;
+    padding-top: 15px;
+    height: 115px;
+
+    span {
+      font-size: .9em;
+      display: inline-block;
+      position: relative;
+      top: -6px;
+    }
+
+    ul {
+      font-size: 1.3em;
+      display: inline-block;
+      margin-left: 25px;
+    }
+  }
+
+  .main-nav {
+    background-color: $color-light-green;
+    text-align: right;
+    height: 55px;
+
+    ul {
+      @include inline-list;
+      font-family: "Duke Fill";
+      font-size: 2em;
+      text-transform: uppercase;
+      padding: 6px 0px 0px 0px;
+
+      li {
+        @extend [class*=" crane-icon-"];
+        @extend .crane-icon-diamond;
+
+        &:before {
+          position: relative;
+          top: 5px;
+          padding-right: 7px;
+          text-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
+        }
+
+        &:first-of-type:before {
+          display: none;
+        }
+        a {
+          letter-spacing: 4px;
+          text-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
+        }
+      }
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    img {
+      position: relative;
+      left: 62px;
+    }
+  }
+}
