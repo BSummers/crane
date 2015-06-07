@@ -1,54 +1,47 @@
 #beer-stage {
-  position: relative;
-
-  > img {
-    max-width: 100%;
-    border: 5px solid $color-cream;
-  }
-
-  .beers-wrapper {
-height: 100%;
-  width: 80%;
-  position: absolute;
-  margin-left: 14%;
-  bottom: 5.3%;
-
-    .beers {
-      position: relative;
-      height: 100%;
-      margin: 0 auto;
-
-      .beer {
-      	position: absolute;
-      	bottom: 0%;
-      	left: 0%;
-  width: 10.1333%;
-
-        &:nth-of-type(2) {
-          left: 20%;
-        }
-
-        &:nth-of-type(3) {
-          left: 40%;
-        }
-
-        &:nth-of-type(4) {
-          left: 60%;
-        }
-
-        &:nth-of-type(5) {
-          left: 80%;
-        }
-
-        img {
-          max-width: 100%;
-        }
-      }
+    position: relative;
+    > img {
+        max-width: 100%;
+        border: 5px solid $color-cream;
     }
-  }
-
-  &:after {
-    content: "";
-    display: block;
-  }
+    .beers-wrapper {
+        height: 100%;
+        width: 80%;
+        position: absolute;
+        margin-left: 14%;
+        bottom: 5.3%;
+        .beers {
+            position: relative;
+            height: 100%;
+            margin: 0 auto;
+            .beer {
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+                width: 10.1333%;
+                &:nth-of-type(2) {
+                    left: 20%;
+                }
+                &:nth-of-type(3) {
+                    left: 40%;
+                }
+                &:nth-of-type(4) {
+                    left: 60%;
+                }
+                &:nth-of-type(5) {
+                    left: 80%;
+                }
+                img {
+                    max-width: 100%;
+                }
+                .info {
+                    display: none;
+                }
+            }
+        }
+    }
+    &:after {
+        content: "";
+        display: block;
+    }
 }

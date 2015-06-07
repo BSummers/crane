@@ -1,0 +1,11 @@
+.cranetip {
+  border-radius: 5px; 
+  border: 2px solid #333;
+  background: $color-cream;
+  color: #333;
+  .tooltipster-content {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+  }
+}
