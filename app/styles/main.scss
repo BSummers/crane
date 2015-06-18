@@ -76,6 +76,7 @@ html, body {
 .three-col-wrapper {
   .three-col {
     @include span(1 of 3);
+    color: $color-gray;
     h2 {
       color: $color-gray;
       font-family: "Duke Fill";
@@ -90,6 +91,23 @@ html, body {
     .content {
       background: url(../images/paper-bg.png) center bottom;
       padding: 10px 20px 50px;
+      color: $color-gray;
+      a {
+        color: $color-gray;
+      }
+
+      ul.untappd-feed {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        max-height: 400px;
+        overflow: auto;
+        li {
+          border-bottom: 1px dashed $color-gray;
+          padding: 10px 0;
+
+        }
+      }
     }
     &.first-of-type {
     }
