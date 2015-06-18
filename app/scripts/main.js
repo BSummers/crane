@@ -8,7 +8,8 @@ $(document).ready(function(){
       content: $(".info", this).html(),
       contentAsHTML: true,
       theme: 'cranetip',
-      interactive: true
+      interactive: true,
+      maxWidth: '300'
 
     });
   });

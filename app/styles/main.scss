@@ -72,11 +72,14 @@ html, body {
 
   }
 }
-
+.clear {
+  clear: both;
+}
 .three-col-wrapper {
   .three-col {
     @include span(1 of 3);
     color: $color-gray;
+    margin-bottom: 50px;
     h2 {
       color: $color-gray;
       font-family: "Duke Fill";
@@ -91,6 +94,8 @@ html, body {
     .content {
       background: url(../images/paper-bg.png) center bottom;
       padding: 10px 20px 50px;
+
+    min-height: 520px;
       color: $color-gray;
       a {
         color: $color-gray;
@@ -114,3 +119,33 @@ html, body {
   }
 }
 
+
+#calendar {
+
+  .event {
+    padding-bottom: 50px;
+    .date {
+      background-color: $color-light-green;
+      color: $color-cream;
+      padding: 10px;
+      text-align: center;
+      width: 25%;
+      float: left;
+      margin-right: 15px;
+      -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
+      -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
+      box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
+      .month {
+
+        font-family: "Duke Fill";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+      }
+      .day {
+        font-size: 2.5em;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+      }
+    }
+  }
+}
