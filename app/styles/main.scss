@@ -72,12 +72,20 @@ html, body {
 
   }
 }
+
+.responsive-img {
+  max-width: 100%;
+}
 .clear {
   clear: both;
 }
 .three-col-wrapper {
   .three-col {
     @include span(1 of 3);
+    @media screen and (max-width : 760px) {
+
+    @include span(1 of 1);
+    }
     color: $color-gray;
     margin-bottom: 50px;
     h2 {
