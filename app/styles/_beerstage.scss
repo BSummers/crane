@@ -1,48 +1,115 @@
 #beer-stage {
-    position: relative;
-    margin-bottom: 50px;
-    > img {
-        max-width: 100%;
-        border: 5px solid $color-cream;
-    }
-    .beers-wrapper {
-        height: 100%;
-        width: 80%;
+  position: relative;
+  margin-bottom: 50px;
+  @include span(1 of 1);
+
+  > img {
+    max-width: 100%;
+    border: 5px solid $color-cream;
+  }
+
+  .beers-wrapper {
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    margin-left: 14%;
+    bottom: 5.3%;
+
+    .beers {
+      position: relative;
+      height: 100%;
+      margin: 0 auto;
+
+      .beer {
         position: absolute;
-        margin-left: 14%;
-        bottom: 5.3%;
-        .beers {
-            position: relative;
-            height: 100%;
-            margin: 0 auto;
-            .beer {
-                position: absolute;
-                bottom: 0%;
-                left: 0%;
-                width: 10.1333%;
-                &:nth-of-type(2) {
-                    left: 20%;
-                }
-                &:nth-of-type(3) {
-                    left: 40%;
-                }
-                &:nth-of-type(4) {
-                    left: 60%;
-                }
-                &:nth-of-type(5) {
-                    left: 80%;
-                }
-                img {
-                    max-width: 100%;
-                }
-                .info {
-                    display: none;
-                }
-            }
+        bottom: 0%;
+        left: 0%;
+        width: 10.1333%;
+
+        &:nth-of-type(2) {
+          left: 20%;
         }
+
+        &:nth-of-type(3) {
+          left: 40%;
+        }
+
+        &:nth-of-type(4) {
+          left: 60%;
+        }
+
+        &:nth-of-type(5) {
+          left: 80%;
+        }
+
+        img {
+          max-width: 100%;
+        }
+
+        .info {
+          display: none;
+        }
+      }
     }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #beer-stage {
+    @include span(1 of 1);
+
+    > img {
+      display: none;
+    }
+
+    .beers-wrapper {
+      clear: both;
+      height: auto;
+      width: 100%;
+      position: inherit;
+      margin-left: auto;
+      bottom: initial;
+
+      .beers {
+        position: relative;
+        height: 100%;
+
+        .beer {
+          float: left;
+          position: static;
+          width: 100%;
+          clear: left;
+          margin-bottom: 20px;
+
+
+          img {
+            max-width: 20%;
+            float: left;
+          }
+
+          .info {
+            display: block;
+            float:right;
+            width: 70%;
+            background-color: $color-cream;
+            color: $color-gray;
+            padding: 10px;
+            h2 {
+                color: $color-light-green;
+            }
+          }
+        }
+      }
+    }
+
     &:after {
-        content: "";
-        display: block;
+      content: "";
+      display: block;
     }
+  }
 }

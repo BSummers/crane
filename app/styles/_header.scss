@@ -41,14 +41,13 @@
 
     /*Style 'show menu' label button and hide it by default*/
     .show-menu {
-      font-family: "Duke Fill";
       text-decoration: none;
       color: #fff;
       background: $color-dark-green;
       text-align: center;
       padding: 10px 0;
       display: none;
-      width: 50px;
+      width: 80px;
       float: right;
       margin-top: 10px;
       -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.7);
@@ -114,11 +113,14 @@
 
 @media screen and (max-width: 760px) {
   .header {
+    background-color: $color-light-green;
     .top-nav {
       display: none;
     }
 
     .main-nav {
+      @include span(1 of 1);
+
       .show-menu {
         display: block;
       }
@@ -159,6 +161,8 @@
     }
 
     .logo {
+      @include span(3 of 4);
+      padding-right: 0;
       img {
         display: none;
       }
