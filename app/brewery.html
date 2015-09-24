@@ -1,135 +1,26 @@
-<!doctype html>
-<html class="no-js" lang="">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>crane</title>
-		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		<!-- build:css styles/vendor.css -->
-		<!-- bower:css -->
-		<!-- endbower -->
-		<!-- endbuild -->
-		<!-- build:css styles/main.css -->
-		<link rel="stylesheet" href="styles/tooltipster.css">
-		<link rel="stylesheet" href="styles/jquery.bxslider.css">
-		<link rel="stylesheet" href="styles/main.css">
-		<!-- endbuild -->
-		<!-- build:js scripts/vendor/modernizr.js -->
-		<script src="/bower_components/modernizr/modernizr.js"></script>
-		<!-- endbuild -->
-	</head>
-	<body>
-		<!--[if lt IE 10]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-		<div class="wrapper">
-			<div class="header">
-				<div class="top-nav">
-					<div class="container">
-						<div class="content">
-							<span>6515 RAILROAD STREET | RAYTOWN, MO 64133 | (816) 555-1234</span>
-							<ul class="social">
-								<li><a href="index.html"><div class="icon crane-icon-facebook"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-twitter"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-google-plus"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-untappd"></div></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="main-nav">
-					<div class="container">
-						<div class="content">
-							<label for="show-menu" class="show-menu">Menu</label>
-							<input type="checkbox" id="show-menu" role="button">
-							<ul id="menu">
-								<li><a href="brewery.html">The Brewery</a></li>
-								<li><a href="beers.html">Our Beers</a></li>
-								<li><a href="shop.html">Shop</a></li>
-								<li><a href="events.html">Events</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-					
-				</div>
-				<div class="logo">
-					<div class="container">
-						<div class="content">
-							<img src="images/banner-logo.png" />
-							<h1>Crane Brewing</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="main-content">
-				<div class="container">
-					<div class="content">
-						<h1>Brewery</h1>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="footer-primary">
-				<div class="container">
-					<div class="content">
-						<div class="footer-social">
-							<span>Stay Connected</span>
-							<ul class="social">
-								<li><a href="index.html"><div class="icon crane-icon-facebook"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-twitter"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-google-plus"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-untappd"></div></a></li>
-							</ul>
-						</div>
-						<div class="footer-logo">
-							<img src="images/footer-logo.png" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-secondary">
-				<div class="container">
-					<div class="content">
-						<div class="footer-menu">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="brewery.html">The Brewery</a></li>
-								<li><a href="beers.html">Our Beers</a></li>
-								<li><a href="shop.html">Shop</a></li>
-								<li><a href="events.html">Events</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-							<div class="designed">Designed By Corbie Summers</div>
-						</div>
-						<div class="footer-copyright">
-							<p>Copyright © 2015 Crane Brewing, All rights reserved.<br />6515 Railroad Street, Raytown, MO 64133</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-		<script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-		e.src='//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-XXXXX-X');ga('send','pageview');
-		</script>
-		<!-- build:js scripts/vendor.js -->
-		<!-- bower:js -->
-		<script src="/bower_components/jquery/dist/jquery.js"></script>
-		<!-- endbower -->
-		<!-- endbuild -->
-		<!-- build:js scripts/main.js -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
-		<script src="scripts/jquery.bxslider.min.js"></script>
-		<script src="scripts/jquery.tooltipster.min.js"></script>
-		<script src="scripts/jquery.rss.min.js"></script>
-		<script src="scripts/main.js"></script>
-		<!-- endbuild -->
-	</body>
-</html>
+{% extends "layouts/default.html" %}
+
+{% set page = "brewery" %}
+
+{% block content %}
+
+<img src="images/brewery-header.jpg" class="responsive-img page-header" />
+<div class="inner-content">
+<p>We are focusing our efforts on those wild and vibrant beers you all love so much. We want to bring you dry and rustic ales like those of Wallonia and the Senne Valley, fermented with your favorite little beasts in wood and steel after the style of the old country. In order to produce such wild and sour beers we will be harvesting yeast and propagating it in our in-house laboratory.  We take traditional methods seriously, but we also have a few ideas of our own. </p>
+<p>Crane Brewing Company is an American brewery inspired equally by both the bold craft beers of home and the rustic ales of Europe. We hope to fulfill the desire of our local metro for these exotic beers, and we hope beer lovers from near and far join us in Raytown, MO for a taste sometime. We strive to build on this grand tradition that never stays the same for too long. </p>
+<p>Crane Brewing, Tradition Evolving.</p>
+
+
+	<div class="title"><img src="images/title-meettheteam.png" class="responsive-img" /></div>
+
+	<ul class="team">
+		<li><img src="images/team-mcrane.png" /><h2>Michael Crane</h2><h3>President & Founder</h3><p>In 2012, Michael entered his first homebrew competition and took a gold medal for a Saison. The thrill of victory pushed him to work harder at making the best beer he could to enter in more competitions...He kept winning. Two years later, he has amassed more than 80 medals from across the country and two best in shows in prestigious competitions. CBC was formed and named after Michael because of his inspiring talent. In addition to being a proud and beloved member of Kansas City’s homebrewing scene, Michael founded the cabinet and furniture manufacturing company, Funblock, 23 years ago. Prior to that he ran a photography business which he sold in order to start Funblock. Michael is an entrepreneur who has found a new community to which he can contribute, and it is the warm reception of this community that has drawn Michael into this new industry.</p></li>
+		<li><img src="images/team-jlouk.png" /><h2>Jason Louk</h2><h3>CEO</h3><p>Jason is a partner with Marr and Company, PC, a public accounting firm in Kansas City, MO. Jason joined Marr and Company, P.C. in 2002 as a senior auditor, was promoted to manager in 2006 and became a shareholder in the firm in January of 2013. Prior to joining the firm he was the Vice-President of Finance for Fretwell-Downing, Inc. in Overland Park, Kansas and before that a senior auditor for BKD, LLP in Kansas City, Missouri.  His primary focus is tax and business advisory services and his industry experience includes manufacturing, professional services, non-profit organizations and employee benefit plans.  He is licensed in both Kansas and Missouri and his professional affiliations include the American Institute of Certified Public Accountants and the Kansas Society of Certified Public Accountants. He passed the Uniform Certified Public Accounting Examination in 2000 and has also completed the Accountant’s Ethics Examination. He graduated from the University of Kansas in Lawrence with a Bachelor of Science degree in Accounting and Business Administration.</p></li>
+		<li><img src="images/team-cmeyers.png" /><h2>Chris Meyers</h2><h3>Vice-President</h3><p>Christopher Meyers graduated from University of Missouri-Kansas City with a Bachelors of Science in Biology and a minor in Chemistry. He also has an Associates of Arts from Longview College. He has worked in Veterinary Medicine for six years. He became the Practice Manager of a Banfield in Belton, MO and was given a second practice in Shawnee, KS two years later. Chris left Banfield for an opportunity at a private practice in busy downtown Kansas City where he has grown the practice, which now has state-of-the-art equipment and is on their second remodel to add another exam room. Chris has always been a lover of craft beer, and currently has over 500 different bottles in his catalog. While he enjoyed homebrewing and often dreamed about owning a brewery, it wasn't until he began putting a plan together that he decided to go for it. Soon, he met Michael and it was obvious that they enhanced each other's efforts. Chris is excited to use his business and laboratory experience to develop the brewery to its ultimate level.</p></li>
+		<li><img src="images/team-shood.png" /><h2>Steve Hood</h2><h3>Head Brewer</h3><p>Steve began homebrewing after graduating from the University of Kansas in 2006. He moved to Milwaukee in 2008, and started conducting tours at the Milwaukee Brewing Company, learning everything he could about the daily brewery operation. In early 2011 he was accepted into the Craft Brewers Apprenticeship Program at the American Brewers Guild in Middlebury, VT. The program had a two year waiting list, so upon moving back to Kansas City, Steve accepted a position as a Merchandiser/Relief Salesman at Central State Beverage Company. While at Central States he developed relationships with brewers, representatives and salesman at Boulevard, Mothers and Stone Brewing Company. It was during his time as a merchandiser that he completed the long-distance Craft Brewers Apprenticeship program at ABG, one of the few brewing programs in country recognized by the industry. ABG’s instructors and graduates represent some of the most well established and respected breweries in the country.  In August, 2013 he started a brewing internship at Boulevard Brewing Company. At Boulevard he gained first-hand experience brewing on a 35 barrel brew house, monitoring fermenting beer, organizing raw materials, maintaining equipment, and bottling on the 750ml line.</p></li>
+		<li><img src="images/team-rstrange.png" /><h2>Randy Strange</h2><h3>Brewer</h3><p>Randy Strange is an avid craft beer enthusiast and homebrewer. He graduated from the University of Memphis in 2008 with a bachelor of science in geology. He moved to Kansas City as the craft beer scene was just starting to rapidly expand and immediately fell in love with the bold flavors breweries across the country were bringing to the market.  In December of 2013, he connected with Michael Crane through the Kansas City Bier Meisters homebrewing club. Randy was immediately on board with helping execute the development of CBC. With over 2 years of homebrewing, Randy has had considerable experience brewing Belgian Ales.  He worked on Boulevard Brewing Company’s large format bottling line for more than a year, loading glass bottles, boxing finished product, and overseeing the corking machine.  Randy also has more than 3 years’ experience in the engineering/environmental field, more than 4 years in retail sales, and more than 5 years in customer service.  With plans to attend Siebel Institute of Technology to obtain an Associates in Brewing Technology, he looks forward to learning and growing with CBC.</p></li>
+		<li><img src="images/team-abryant.png" /><h2>Aaron Bryant</h2><h3>VP Operations</h3><p>Aaron Bryant is a graduate of The University of Kansas with a Bachelors of Science in Chemical Engineering and a minor in Petroleum Engineering. With detailed knowledge of the process Industry he brings a technical and practical practice to the group.  Aaron is an Eagle Scout and throughout college spent numerous hours in detail oriented labs including in depth analysis of batch reactors, biologic reactions, waste energy optimization, distillation and other commonly used processes in the Chemical Industry.  Aaron has attended multiple leadership programs through his college Professional Engineering fraternity Theta Ta, Society of Petroleum Engineers, and the Boy Scouts of America as well as having leadership positions in each.  His plans for the future include pursuing a Master’s in Business Administration and working towards obtaining a professional engineering license. Aaron’s interest in the Craft Beer world evolved from his enjoyment of tasty beer and fact that it was produced with the principles he was studying. He has been home brewing for one year and is growing his knowledge in the beer world.  Aaron is grateful for the opportunity to be at the ground level of Crane Brewing and to be able to help it grow.</p></li>
+	</ul>
+</div>
+
+{% endblock %}

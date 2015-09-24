@@ -1,240 +1,114 @@
-<!doctype html>
-<html class="no-js" lang="">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>crane</title>
-		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		<!-- build:css styles/vendor.css -->
-		<!-- bower:css -->
-		<!-- endbower -->
-		<!-- endbuild -->
-		<!-- build:css styles/main.css -->
-		<link rel="stylesheet" href="styles/tooltipster.css">
-		<link rel="stylesheet" href="styles/jquery.bxslider.css">
-		<link rel="stylesheet" href="styles/main.css">
-		<!-- endbuild -->
-		<!-- build:js scripts/vendor/modernizr.js -->
-		<script src="/bower_components/modernizr/modernizr.js"></script>
-		<!-- endbuild -->
-	</head>
-	<body>
-		<!--[if lt IE 10]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-		<div class="wrapper">
-			<div class="header">
-				<div class="top-nav">
-					<div class="container">
-						<div class="content">
-							<span>6515 RAILROAD STREET | RAYTOWN, MO 64133 | (816) 555-1234</span>
-							<ul class="social">
-								<li><a href="index.html"><div class="icon crane-icon-facebook"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-twitter"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-google-plus"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-untappd"></div></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="main-nav">
-					<div class="container">
-						<div class="content">
-							<label for="show-menu" class="show-menu">Menu</label>
-							<input type="checkbox" id="show-menu" role="button">
-							<ul id="menu">
-								<li><a href="brewery.html">The Brewery</a></li>
-								<li><a href="beers.html">Our Beers</a></li>
-								<li><a href="shop.html">Shop</a></li>
-								<li><a href="events.html">Events</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-					
-				</div>
-				<div class="logo">
-					<div class="container">
-						<div class="content">
-							<img src="images/banner-logo.png" />
-							<h1>Crane Brewing</h1>
-						</div>
-					</div>
+{% extends "layouts/default.html" %}
+
+{% set page = "front" %}
+{% block content %}
+
+<div id="hero-slider">
+	<ul class="bxslider">
+		<li><img src="images/hero-01.jpg" /></li>
+		<li><img src="images/hero-02.jpg" /></li>
+		<li><img src="images/hero-03.jpg" /></li>
+	</ul>
+</div>
+
+<div class="title"><img src="images/title-beershowcase.png" class="responsive-img" /></div>
+
+<div id="beer-stage">
+	<img src="images/beer-stage.jpg" />
+	<div class="beers-wrapper">
+		<div class="beers">
+			<div class="beer beer-beetweiss">
+				<a href="index.html"><img src="images/beer-beetweiss.png" /></a>
+				<div class="info">
+					<h2>Beetweiss</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
 			</div>
-			<div class="main-content">
-				<div class="container">
-					<div class="content">
-						<div id="hero-slider">
-							<ul class="bxslider">
-								<li><img src="images/hero-01.jpg" /></li>
-								<li><img src="images/hero-02.jpg" /></li>
-								<li><img src="images/hero-03.jpg" /></li>
-							</ul>
-						</div>
-						<div class="title"><img src="images/title-beershowcase.png" class="responsive-img" /></div>
-						<div id="beer-stage">
-							<img src="images/beer-stage.jpg" />
-							<div class="beers-wrapper">
-								<div class="beers">
-									<div class="beer beer-beetweiss">
-										<a href="index.html"><img src="images/beer-beetweiss.png" /></a>
-										<div class="info">
-											<h2>Beetweiss</h2>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-									</div>
-									<div class="beer beer-gose">
-										<a href="index.html"><img src="images/beer-gose.png" /></a>
-										<div class="info">
-											<h2>Gose</h2>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-									</div>
-									<div class="beer beer-saison">
-										<a href="index.html"><img src="images/beer-saison.png" /></a>
-										<div class="info">
-											<h2>Saison</h2>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-									</div>
-									<div class="beer beer-teaweiss">
-										<a href="index.html"><img src="images/beer-teaweiss.png" /></a>
-										<div class="info">
-											<h2>Tea Weiss</h2>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-									</div>
-									<div class="beer beer-ipa">
-										<a href="index.html"><img src="images/beer-ipa.png" /></a>
-										<div class="info">
-											<h2>IPA</h2>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="three-col-wrapper">
-							<div id="twitter" class="three-col">
-								<div class="content">
-									<h2>Latest Tweets</h2>
-									<a class="twitter-timeline" href="https://twitter.com/CraneBrewing" data-widget-id="607838453468794881" data-chrome="noheader noborders transparent" >Tweets by @CraneBrewing</a>
-									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-								</div>
-							</div>
-							<div id="calendar" class="three-col">
-								<div class="content">
-									<h2>Upcoming Events</h2>
-									<div class="event">
-										<div class="date">
-											<div class="month">Jun</div>
-											<div class="day">20</div>
-										</div>
-										<div class="description">
-											<h3>Event Title</h3>
-											<p>12:00 pm @ <a href="#">Location</a>
-										</div>
-
-									</div>
-									<br class="clear" />
-									<div class="event">
-										<div class="date">
-											<div class="month">Jun</div>
-											<div class="day">20</div>
-										</div>
-										<div class="description">
-											<h3>Event Title</h3>
-											<p>12:00 pm @ <a href="#">Location</a>
-										</div>
-
-									</div>
-									<br class="clear" />
-									<div class="event">
-										<div class="date">
-											<div class="month">Jun</div>
-											<div class="day">20</div>
-										</div>
-										<div class="description">
-											<h3>Event Title</h3>
-											<p>12:00 pm @ <a href="#">Location</a>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<div id="untappd" class="three-col">
-								<div class="content">
-									<h2>Who's Drinking</h2>
-								</div>
-							</div>
-						</div>
-
-					</div>
+			<div class="beer beer-gose">
+				<a href="index.html"><img src="images/beer-gose.png" /></a>
+				<div class="info">
+					<h2>Gose</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+			<div class="beer beer-saison">
+				<a href="index.html"><img src="images/beer-saison.png" /></a>
+				<div class="info">
+					<h2>Saison</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+			<div class="beer beer-teaweiss">
+				<a href="index.html"><img src="images/beer-teaweiss.png" /></a>
+				<div class="info">
+					<h2>Tea Weiss</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+			<div class="beer beer-ipa">
+				<a href="index.html"><img src="images/beer-ipa.png" /></a>
+				<div class="info">
+					<h2>IPA</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
 			</div>
 		</div>
-		<div class="footer">
-			<div class="footer-primary">
-				<div class="container">
-					<div class="content">
-						<div class="footer-social">
-							<span>Stay Connected</span>
-							<ul class="social">
-								<li><a href="index.html"><div class="icon crane-icon-facebook"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-twitter"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-google-plus"></div></a></li>
-								<li><a href="index.html"><div class="icon crane-icon-untappd"></div></a></li>
-							</ul>
-						</div>
-						<div class="footer-logo">
-							<img src="images/footer-logo.png" />
-						</div>
-					</div>
+	</div>
+</div>
+
+<div class="three-col-wrapper">
+	<div id="twitter" class="three-col">
+		<div class="content">
+			<h2>Latest Tweets</h2>
+			<a class="twitter-timeline" href="https://twitter.com/CraneBrewing" data-widget-id="607838453468794881" data-chrome="noheader noborders transparent" >Tweets by @CraneBrewing</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</div>
+	<div id="calendar" class="three-col">
+		<div class="content">
+			<h2>Upcoming Events</h2>
+			<div class="event">
+				<div class="date">
+					<div class="month">Jun</div>
+					<div class="day">20</div>
 				</div>
+				<div class="description">
+					<h3>Event Title</h3>
+					<p>12:00 pm @ <a href="#">Location</a>
+				</div>
+
 			</div>
-			<div class="footer-secondary">
-				<div class="container">
-					<div class="content">
-						<div class="footer-menu">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="brewery.html">The Brewery</a></li>
-								<li><a href="beers.html">Our Beers</a></li>
-								<li><a href="shop.html">Shop</a></li>
-								<li><a href="events.html">Events</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-							<div class="designed">Designed By Corbie Summers</div>
-						</div>
-						<div class="footer-copyright">
-							<p>Copyright © 2015 Crane Brewing, All rights reserved.<br />6515 Railroad Street, Raytown, MO 64133</p>
-						</div>
-					</div>
+			<br class="clear" />
+			<div class="event">
+				<div class="date">
+					<div class="month">Jun</div>
+					<div class="day">20</div>
 				</div>
+				<div class="description">
+					<h3>Event Title</h3>
+					<p>12:00 pm @ <a href="#">Location</a>
+				</div>
+
+			</div>
+			<br class="clear" />
+			<div class="event">
+				<div class="date">
+					<div class="month">Jun</div>
+					<div class="day">20</div>
+				</div>
+				<div class="description">
+					<h3>Event Title</h3>
+					<p>12:00 pm @ <a href="#">Location</a>
+				</div>
+
 			</div>
 		</div>
-		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-		<script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-		e.src='//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-XXXXX-X');ga('send','pageview');
-		</script>
-		<!-- build:js scripts/vendor.js -->
-		<!-- bower:js -->
-		<script src="/bower_components/jquery/dist/jquery.js"></script>
-		<!-- endbower -->
-		<!-- endbuild -->
-		<!-- build:js scripts/main.js -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
-		<script src="scripts/jquery.bxslider.min.js"></script>
-		<script src="scripts/jquery.tooltipster.min.js"></script>
-		<script src="scripts/jquery.rss.min.js"></script>
-		<script src="scripts/main.js"></script>
-		<!-- endbuild -->
-	</body>
-</html>
+	</div>
+	<div id="untappd" class="three-col">
+		<div class="content">
+			<h2>Who's Drinking</h2>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

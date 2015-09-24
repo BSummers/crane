@@ -24,6 +24,9 @@
     "jshint-stylish": "^1.0.0",
     "main-bower-files": "^2.5.0",
     "opn": "^1.0.0",
-    "wiredep": "^2.0.0"
+    "wiredep": "^2.0.0",
+    "gulp-file-include": "~0.13.3",
+    "gulp-wrap": "~0.11.0",
+    "gulp-nunjucks-render": "~0.2.1"
   }
 }

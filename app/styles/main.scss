@@ -16,155 +16,83 @@
 // Partials
 @import "social";
 @import "header";
+@import "internal";
+@import "front";
 @import "footer";
 @import "beerstage";
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  background: #fafafa url(../images/planks.jpg) repeat-y;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: $color-cream;
-  margin: 0;
-  padding: 0;
+    background: #fafafa url(../images/planks.jpg) center top;
+    font-family: "Colab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: $color-cream;
+    margin: 0;
+    padding: 0;
 }
 
 * {
-  margin: 0;
+    margin: 0;
 }
+
 html, body {
-  height: 100%;
+    height: 100%;
 }
+
 .wrapper {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -140px; 
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -140px;
 }
+
 .wrapper:after {
-  content: "";
-  display: block;
+    content: "";
+    display: block;
 }
+
 .footer, .wrapper:after {
-  height: 140px; 
+    height: 140px;
 }
 
 .container {
-  @include container($pageMaxWidth);
-  >.content {
-    margin: 0 0px;
-  }
+    @include container($pageMaxWidth);
+    >.content {
+        margin: 0 0px;
+    }
 }
 
-.header { z-index: 100; }
-.main-content { z-index: 50; margin-top: 30px;}
+.header {
+    z-index: 100;
+}
 
-@media screen and (max-width : 760px) {
-  .main-content {
+
+.main-content {
     margin-top: 0px;
-    padding-top: 85px;
-  }
+    padding: 40px 0 100px;
 }
 
-.title {
-  margin: 0 auto 20px;
-    text-align: center;
-    @include span(1 of 1);
-  img {
 
-  }
+@media screen and (max-width: 760px) {
+    .main-content {
+        margin-top: 0px;
+        padding-top: 85px;
+    }
 }
 
 .responsive-img {
-  max-width: 100%;
+    max-width: 100%;
 }
+
 .clear {
-  clear: both;
-}
-.three-col-wrapper {
-  .three-col {
-    @include span(1 of 3);
-    @media screen and (max-width : 760px) {
-
-    @include span(1 of 1);
-    }
-    color: $color-gray;
-    margin-bottom: 50px;
-    h2 {
-      color: $color-gray;
-      font-family: "Duke Fill";
-      font-size: 2em;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      @include diamonds;
-      border-bottom: 2px solid $color-gray;
-      text-align: center;
-      margin-bottom: .5em;
-    }
-    .content {
-      background: url(../images/paper-bg.png) center bottom;
-      padding: 10px 20px 50px;
-
-    min-height: 520px;
-      color: $color-gray;
-      a {
-        color: $color-gray;
-      }
-
-      ul.untappd-feed {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        max-height: 400px;
-        overflow: auto;
-        li {
-          border-bottom: 1px dashed $color-gray;
-          padding: 10px 0;
-
-        }
-      }
-    }
-    &.first-of-type {
-    }
-  }
+    clear: both;
 }
 
-#hero-slider {
-    @include span(1 of 1);
-  }
 
-#calendar {
 
-  .event {
-    padding-bottom: 50px;
-    .date {
-      background-color: $color-light-green;
-      color: $color-cream;
-      padding: 10px;
-      text-align: center;
-      width: 25%;
-      float: left;
-      margin-right: 15px;
-      -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
-      -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
-      box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .7);
-      .month {
-
-        font-family: "Duke Fill";
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-      }
-      .day {
-        font-size: 2.5em;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-      }
-    }
-  }
-}
