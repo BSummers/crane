@@ -6,8 +6,13 @@ body.front {
     .three-col-wrapper {
         .three-col {
             @include span(1 of 3);
-            @media screen and (max-width: 760px) {
+
+            @media screen and (max-width: $mobile-width) {
                 @include span(1 of 1);
+            }
+
+            @media screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
+                @include span(1 of 2);
             }
             color: $color-gray;
             margin-bottom: 50px;
@@ -43,33 +48,6 @@ body.front {
                 }
             }
             &.first-of-type {}
-        }
-    }
-    #calendar {
-        .event {
-            padding-bottom: 50px;
-            .date {
-                background-color: $color-light-green;
-                color: $color-cream;
-                padding: 10px;
-                text-align: center;
-                width: 25%;
-                float: left;
-                margin-right: 15px;
-                -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.7);
-                -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.7);
-                box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.7);
-                .month {
-                    font-family: "Duke Fill";
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-                }
-                .day {
-                    font-size: 2.5em;
-                    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-                }
-            }
         }
     }
 }

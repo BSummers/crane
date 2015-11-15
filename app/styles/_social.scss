@@ -1,5 +1,6 @@
 ul.social {
   @include inline-list;
+  margin-top: 15px;
 
   li {
     background-color: $color-dark-green;

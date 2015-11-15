@@ -10,10 +10,10 @@
 
   .beers-wrapper {
     height: 100%;
-    width: 80%;
+    width: 79.2%;
     position: absolute;
-    margin-left: 14%;
-    bottom: 5.3%;
+    margin-left: 9.8%;
+    bottom: 8.2%;
 
     .beers {
       position: relative;
@@ -24,26 +24,37 @@
         position: absolute;
         bottom: 0%;
         left: 0%;
-        width: 10.1333%;
+        width: 9.9%;
 
         &:nth-of-type(2) {
-          left: 20%;
+          left: 14.28%;
         }
 
         &:nth-of-type(3) {
-          left: 40%;
+          left: 28.57%;
         }
 
         &:nth-of-type(4) {
-          left: 60%;
+          left: 42.85%;
         }
 
         &:nth-of-type(5) {
-          left: 80%;
+          left: 57.14%;
+        }
+
+        &:nth-of-type(6) {
+          left: 71.42%;
+        }
+
+        &:nth-of-type(7) {
+          left: 85.71%;
         }
 
         img {
           max-width: 100%;
+          @media screen and (max-width: $mobile-width) {
+            max-height: 200px;
+          }
         }
 
         .info {
@@ -59,7 +70,7 @@
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: $mobile-width) {
   #beer-stage {
     @include span(1 of 1);
 
@@ -99,7 +110,7 @@
             background-color: $color-cream;
             color: $color-gray;
             padding: 10px;
-            h2 {
+            h2, a {
                 color: $color-light-green;
             }
           }

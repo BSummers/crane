@@ -1,4 +1,3 @@
-
 .main-content {
     z-index: 50;
     margin-top: 30px;
@@ -11,7 +10,6 @@
         }
     }
 }
-
 
 body.not-front {
     .main-content {
@@ -28,20 +26,15 @@ body.not-front {
             p {
                 margin: 10px 0;
             }
-
-
-
-
             ul.team {
                 margin: 0;
                 padding: 0;
                 li {
                     list-style-type: none;
-
                     img {
                         max-width: 200px;
                         float: left;
-                        @media screen and (max-width: 760px) {
+                        @media screen and (max-width: $tablet-width) {
                             float: none;
                             margin: 0px auto;
                             max-width: 100%;
@@ -56,7 +49,7 @@ body.not-front {
                         font-weight: normal;
                         color: $color-light-green;
                         text-transform: uppercase;
-                        @media screen and (max-width: 760px) {
+                        @media screen and (max-width: $tablet-width) {
                             float: none;
                             margin: 0px auto;
                             max-width: 100%;
@@ -72,7 +65,7 @@ body.not-front {
                         text-transform: uppercase;
                         letter-spacing: .03em;
                         font-weight: normal;
-                        @media screen and (max-width: 760px) {
+                        @media screen and (max-width: $tablet-width) {
                             float: none;
                             margin: 0px auto;
                             max-width: 100%;
@@ -85,7 +78,7 @@ body.not-front {
                         position: relative;
                         top: -105px;
                         margin-bottom: -60px;
-                        @media screen and (max-width: 760px) {
+                        @media screen and (max-width: $tablet-width) {
                             float: none;
                             margin: 0px auto;
                             max-width: 100%;
@@ -95,37 +88,42 @@ body.not-front {
                     }
                 }
             }
-
-
-
             ul.beer-list {
                 margin: 20px 0;
                 padding: 0;
-                        margin-bottom: 40px;
+                margin-bottom: 40px;
                 li {
                     list-style-type: none;
                     clear: left;
                     margin: 20px 0;
                     div.beer-label {
-                            float: left;    
+                        float: left;
                         img {
-                            max-width: 100%; 
+                            max-width: 100%;
                         }
                         margin-bottom: 20px;
+                        @media screen and (max-width: $tablet-width) {
+                            text-align: center;
+                            float: none;
+                            margin-bottom: 0px;
+                        }
+                        i {
+                            margin: 0px auto;
+                        }
+                    
                     }
                     div.beer-info {
                         background-color: $color-dark-cream;
                         padding: 20px;
                         margin: 10px 10px 10px 320px;
                         min-height: 300px;
-                        @media screen and (max-width: 760px) {
+                        @media screen and (max-width: $tablet-width) {
                             float: none;
                             margin: 0px auto;
                             max-width: 100%;
                             text-align: center;
-                            padding-bottom: 100px;
+                            padding-bottom: 20px;
                         }
-
                         h2 {
                             font-family: "Duke Fill";
                             font-size: 2.9em;
@@ -135,37 +133,114 @@ body.not-front {
                             text-transform: uppercase;
                             span {
                                 color: $color-light-green;
-                                @media screen and (max-width: 760px) {
+                                @media screen and (max-width: $tablet-width) {
                                     display: block;
                                 }
                             }
                         }
-
-                        p {
-
-                        }
+                        p {}
                         .beer-links {
-                            color: $color-light-green;
                             a {
                                 color: $color-light-green;
-                            }
-                        }
-                        &.beer-beetweiss {
-                            background:  $color-dark-cream url('../images/tulip-purple.png') bottom right no-repeat;
-                            @media screen and (max-width: 760px) {
-                                background-position: bottom center;
-                            }
-                        }
-                        &.beer-saison {
-                            background:  $color-dark-cream url('../images/tulip-green.png') bottom right no-repeat;
-                            @media screen and (max-width: 760px) {
-                                background-position: bottom center;
+                                font-weight: bold;
                             }
                         }
                     }
+                    div.beer-pour {
+                        background-color: $color-dark-cream;
+                        text-align: center;
+
+                        @media screen and (min-width: 771px) {
+                            display: inline-block;
+                            float: right;
+                            transform: translateY(-124px);
+                            margin: 10px;
+                        }
+                        i {
+                            margin: 0px auto;
+                        }
+                    }
+                }
+                li#saison {
+                    .beer-label {
+                        background-color: $color-label-saison;
+                    }
+                    .beer-pour {
+                        background-color: $color-pour-saison;
+                    }
+                }
+                li#orange-gose {
+                    .beer-label {
+                        background-color: $color-label-orange-gose;
+                    }
+                    .beer-pour {
+                        background-color: $color-pour-orange-gose;
+                    }
+                }
+                li#farmhouse-ipa {
+                    .beer-label {
+                        background-color: $color-label-farmhouse-ipa;
+                    }
+                    .beer-pour {
+                        background-color: $color-pour-farmhouse-ipa;
+                    }
+                }
+                li#grapefruit-gose {
+                    .beer-label {
+                        background-color: $color-label-grapefruit-gose;
+                    }
+                    .beer-pour {
+                        background-color: $color-pour-grapefruit-gose;
+                    }
+                }
+                li#tea-weiss {
+                    .beer-label {
+                        background-color: $color-label-tea-weiss;
+                    }
+                    .beer-pour {
+                        background-color: $color-pour-tea-weiss;
+                    }
+                }
+                li#apricot-weiss {
+                    .beer-label {
+                        background-color: $color-label-apricot-weiss;
+                    }
+                    .beer-pour {
+                        background-color: $color-pour-apricot-weiss;
+                    }
+                }
+                li#beet-weiss {
+                    .beer-label {
+                        background-color: $color-label-beet-weiss;
+                    }
+                    .beer-pour {
+                        background-color: $color-pour-beet-weiss;
+                    }
                 }
             }
-
         }
     }
+}
+
+.image-gallery {
+    .gallery-item {
+        @include span(4 of 12);
+        @media screen and (max-width: $tablet-width) {
+            @include span(1 of 1);
+        }
+        margin-bottom: gutter();
+        &:nth-child(3n+3) {
+            @include last;
+        }
+    }
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact-form {
+    max-width: 600px;
 }

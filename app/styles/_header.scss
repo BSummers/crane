@@ -29,7 +29,7 @@
         }
         .container {
             padding: 0 50px;
-            @media screen and (max-width: 760px) {
+            @media screen and (max-width: $tablet-width) {
                 padding: 0;
             }
         }
@@ -37,7 +37,7 @@
     .main-nav {
         .container {
             padding: 0 50px;
-            @media screen and (max-width: 760px) {
+            @media screen and (max-width: $tablet-width) {
                 padding: 0;
             }
         }
@@ -96,7 +96,7 @@
     .logo {
         .container {
             padding: 0 50px;
-            @media screen and (max-width: 760px) {
+            @media screen and (max-width: $tablet-width) {
                 padding: 0;
             }
         }
@@ -115,7 +115,7 @@
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: $tablet-width) {
     .header {
         background-color: $color-light-green;
         .top-nav {

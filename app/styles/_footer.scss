@@ -89,7 +89,7 @@
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: $tablet-width) {
   .footer {
     .footer-primary {
       text-align: center;

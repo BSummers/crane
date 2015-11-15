@@ -1,55 +1,158 @@
 {% extends "layouts/default.html" %}
-
 {% set page = "beers" %}
-
 {% block content %}
-
-<img src="images/beers-header.jpg" class="responsive-img page-header" />
-<div class="inner-content">
-<p>Crane Brewing Company is focused on three styles, Saison, Berliner Weiss and Lambic. No matter what styles, hybrids or experiments we pursue in the future, these styles will be at the heart of our efforts and output. We believe that these three styles are the foundations upon which we can place a variety of hops, wild yeast, souring bacteria, wood-aging, spices, fruit, and specialty malt.  We see a desire for more beer of these styles, and we promise to challenge your expectation of what these styles can offer in relation to seasonality and flavor combinations. While we will distribute four standard versions of these styles year-round in 750 mL bottles and kegs, we will offer brewery-only special releases and one-off experimental batches throughout the year. </p>
-
-<ul class="beer-list">
-	<li>
-		<div class="beer-label">
-			<img src="images/label-beetweiss.png" />
-		</div>
-		<div class="beer-info beer-beetweiss">
-			<h2>Beet Weiss <span class="beer-abv">(7.3% ABV)</span></h2>
-			<div class="beer-description">
-				<p>The beer that made Michael Crane famous is an earthy, zinger that pairs great with food. Our Fall seasonal Berliner-style weiss combines a sour German wheat beer with an unlikely vegetable, and, frankly, they look really good together.</p>
-			</div>
-			<div class="beer-details">
-				<strong>Grains:</strong> Wheat Malt<br />
-				<strong>Hops:</strong> Golding, Browning<br />
-				<strong>Yeast:</strong> Farmhouse Yeast, Other Yeast<br />
-			</div>
-			
-			<div class="beer-links"><a href="https://untappd.com/b/crane-brewing-company-in-planning-beet-weiss-test/649744">Untappd</a> | <a href="">Beeradvocate</a> | <a href="">ratebeer</a></div>
-
-		</div>
-	</li>
-	<li>
-		<div class="beer-label">
-			<img src="images/label-saison.png" />
-		</div>
-		<div class="beer-info beer-saison">
-			<h2>Saison <span class="beer-abv">(6.8% ABV)</span></h2>
-			<div class="beer-description">
-				<p>A farmhouse-style field beer brewed to finish dry and refresh. This Belgo-French style ale’s flavor begins with toasty malt, followed by fruity yeast and ends lightly bitter and crisp. </p>
-			</div>
-			<div class="beer-details">
-				<strong>Grains:</strong> Wheat Malt<br />
-				<strong>Hops:</strong> Golding, Browning<br />
-				<strong>Yeast:</strong> Farmhouse Yeast, Other Yeast<br />
-			</div>
-			
-			<div class="beer-links"><a href="https://untappd.com/b/crane-brewing-company-in-planning-beet-weiss-test/649744">Untappd</a> | <a href="">Beeradvocate</a> | <a href="">ratebeer</a></div>
-
-		</div>
-	</li>
-</ul>
-
-<br />
-</div>
-
+	<img src="images/header_images/beers-header.jpg" class="responsive-img page-header" />
+	<div class="inner-content">
+		<p>Crane Brewing Company is focused on three styles, Saison, Berliner Weiss and Lambic. No matter what styles, hybrids or experiments we pursue in the future, these styles will be at the heart of our efforts and output. We believe that these three styles are the foundations upon which we can place a variety of hops, wild yeast, souring bacteria, wood-aging, spices, fruit, and specialty malt.  We see a desire for more beer of these styles, and we promise to challenge your expectation of what these styles can offer in relation to seasonality and flavor combinations. While we will distribute four standard versions of these styles year-round in 750 mL bottles and kegs, we will offer brewery-only special releases and one-off experimental batches throughout the year. </p>
+		<ul class="beer-list">
+			<li id="saison">
+				<div class="beer-label">
+					<img src="images/beers/origami-saison.png" />
+				</div>
+				<div class="beer-info beer-saison">
+					<h2>Saison <span class="beer-abv">(6.8% ABV)</span></h2>
+					<div class="beer-description">
+						<p>A farmhouse-style field beer brewed to finish dry and refresh. This Belgo-French style ale’s flavor begins with toasty malt, followed by fruity yeast and ends lightly bitter and crisp.</p>
+					</div>
+					<div class="beer-details">
+						<strong>Malt:</strong> Pilsner, Munich and Wheat<br />
+						<strong>Hops:</strong> Magnum and Styrian Golding<br />
+						<strong>Yeast:</strong> French and Belgian Saison Yeast<br />
+					</div>
+					<br />
+					<div class="beer-links"><a target="_blank" href="https://untappd.com/b/crane-brewing-company-saison/1222022">Untappd</a> | <a href="">Beeradvocate</a> | <a href="">Ratebeer</a></div>
+				</div>
+				<div class="beer-pour">
+					<img src="images/beers/pour-saison.png">
+				</div>
+			</li>
+			<li id="orange-gose">
+				<div class="beer-label">
+					<img src="images/beers/origami-orange-gose.png" />
+				</div>
+				<div class="beer-info beer-beetweiss">
+					<h2>Orange Gose <span class="beer-abv">(4.1% ABV)</span></h2>
+					<div class="beer-description">
+						<p>If you find yourself sailing on open water for an extended time you are going to need to ward off scurvy and thirst! This tangy gose infused with fresh orange zest will do both. Enjoy the salty zing wherevever the wind takes you.</p>
+					</div>
+					<div class="beer-details">
+						<strong>Malt:</strong> Pilsner and Wheat<br />
+						<strong>Hops:</strong> Magnum<br />
+						<strong>Yeast:</strong> Three Strain of Lactobacillus and Saison Yeast<br />
+					</div>
+					
+					<div class="beer-links"><a target="_blank" href="https://untappd.com/b/crane-brewing-company-orange-gose/1278357">Untappd</a> | <a href="">Beeradvocate</a> | <a href="">ratebeer</a></div>
+				</div>
+				<div class="beer-pour">
+					<img src="images/beers/pour-orange-gose.png">
+				</div>
+			</li>
+			<li id="farmhouse-ipa">
+				<div class="beer-label">
+					<img src="images/beers/origami-farmhouse-ipa.png" />
+				</div>
+				<div class="beer-info beer-saison">
+					<h2>Farmhouse IPA <span class="beer-abv">(6.8% ABV)</span></h2>
+					<div class="beer-description">
+						<p>An American farmhouse-style ale brewed with the IPA lover in mind. Big, bold, juicy hops join the dry, yeast driven saison flavor to create one of the most aromatic, undiluted hop experiences you can find. </p>
+					</div>
+					<div class="beer-details">
+						<strong>Malt:</strong> Pilsner, Munich and Wheat<br />
+						<strong>Hops:</strong> Magnum, Styrian Golding, and a rotating blend of aroma hops<br />
+						<strong>Yeast:</strong> A blend of French and Belgian Saison Yeast<br />
+					</div>
+					
+					<div class="beer-links"><a target="_blank" href="https://untappd.com/CraneBrewingCo">Untappd</a> | <a href="">Beeradvocate</a> | <a href="">ratebeer</a></div>
+				</div>
+				<div class="beer-pour">
+					<img src="images/beers/pour-farmhouse-ipa.png">
+				</div>
+			</li>
+			<li id="tea-weiss">
+				<div class="beer-label">
+					<img src="images/beers/origami-tea-weiss.png" />
+				</div>
+				<div class="beer-info beer-saison">
+					<h2>Tea Weiss <span class="beer-abv">(4.1% ABV)</span></h2>
+					<div class="beer-description">
+						<p>A distinctly American take on an old-world German ale, Tea Weiss combines Kansas City’s own Hugo Berry Rooibos Tea with a spritzy, sour wheat beer to exceedingly refreshing effect. </p>
+					</div>
+					<div class="beer-details">
+						<strong>Malt:</strong> Pilsner and Wheat<br />
+						<strong>Hops:</strong> Magnum<br />
+						<strong>Yeast:</strong> Three Strains of Lactobacillus and Saison Yeast<br />
+					</div>
+					
+					<div class="beer-links"><a target="_blank" href="https://untappd.com/CraneBrewingCo">Untappd</a> | <a href="">Beeradvocate</a> | <a href="">ratebeer</a></div>
+				</div>
+				<div class="beer-pour">
+					<img src="images/beers/pour-tea-weiss.png">
+				</div>
+			</li>
+			<li id="apricot-weiss">
+				<div class="beer-label">
+					<img src="images/beers/origami-apricot-weiss.png" />
+				</div>
+				<div class="beer-info beer-saison">
+					<h2>Apricot Weiss <span class="beer-abv">(4.5% ABV)</span></h2>
+					<div class="beer-description">
+						<p>You may be asking yourself why there is a flower on the label of an apricot beer. Well, the tree must blossom in order to fruit. Conversely, this beer blossoms when it is fruited. Juicy, delicate, and oh so perfect, no matter the season. </p>
+					</div>
+					<div class="beer-details">
+						<strong>Malt:</strong> Pilsner and Wheat<br />
+						<strong>Hops:</strong> Magnum<br />
+						<strong>Yeast:</strong> Three Strains of Lactobacillus and Saison Yeast<br />
+					</div>
+					
+					<div class="beer-links"><a target="_blank" href="https://untappd.com/b/crane-brewing-company-apricot-weiss/1278368">Untappd</a> | <a href="">Beeradvocate</a> | <a href="">ratebeer</a></div>
+				</div>
+				<div class="beer-pour">
+					<img src="images/beers/pour-apricot-weiss.png">
+				</div>
+			</li>
+			<li id="grapefruit-gose">
+				<div class="beer-label">
+					<img src="images/beers/origami-grapefruit-gose.png" />
+				</div>
+				<div class="beer-info beer-saison">
+					<h2>Grapefruit Gose <span class="beer-abv">(4.1% ABV)</span></h2>
+					<div class="beer-description">
+						<p>Possibly the most rustic and obscure beer of Germany, the salty, sour gose of Leipzig needed an American touch. How about grapefruit zest? The result is probably the only beer that goes just as well by the pool as it does with Thanksgiving dinner.</p>
+					</div>
+					<div class="beer-details">
+						<strong>Malt:</strong> Pilsner and Wheat<br />
+						<strong>Hops:</strong> Magnum<br />
+						<strong>Yeast:</strong> Three Strain of Lactobacillus and Saison Yeast<br />
+					</div>
+					
+					<div class="beer-links"><a target="_blank" href="https://untappd.com/CraneBrewingCo">Untappd</a> | <a href="">Beeradvocate</a> | <a href="">ratebeer</a></div>
+				</div>
+				<div class="beer-pour">
+					<img src="images/beers/pour-grapefruit-gose.png">
+				</div>
+			</li>
+			<li id="beet-weiss">
+				<div class="beer-label">
+					<img src="images/beers/origami-beet-weiss.png" />
+				</div>
+				<div class="beer-info beer-saison">
+					<h2>Beet Weiss <span class="beer-abv">(4.5% ABV)</span></h2>
+					<div class="beer-description">
+						<p>The beer that made Michael Crane famous is an earthy, zinger that pairs great with food. Our Fall seasonal Berliner-style weiss combines a sour German wheat beer with an unlikely vegetable, and, frankly, they look really good together. </p>
+					</div>
+					<div class="beer-details">
+						<strong>Malt:</strong> Pilsner and Wheat<br />
+						<strong>Hops:</strong> Magnum<br />
+						<strong>Yeast:</strong> Three Strains of Lactobacillus and Saison Yeast<br />
+					</div>
+					
+					<div class="beer-links"><a target="_blank" href="https://untappd.com/CraneBrewingCo">Untappd</a> | <a href="">Beeradvocate</a> | <a href="">ratebeer</a></div>
+				</div>
+				<div class="beer-pour">
+					<img src="images/beers/pour-beet-weiss.png">
+				</div>
+			</li>
+		</ul>
+		<br />
+	</div>
 {% endblock %}

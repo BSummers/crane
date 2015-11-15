@@ -27,7 +27,7 @@ $screen-md-max: $screen-lg-min - 1 !default;
 $susy: (gutter-position: inside-static, columns: $grid-columns, gutters: 1, column-width: $grid-gutter-width);
 
 //custom mixin to handle BS breakpoints
-@mixin break($class) {
+@mixin breaker($class) {
   @if $class == xs {
     @media (max-width: $screen-xs-max) {
       @content;

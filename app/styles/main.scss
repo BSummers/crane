@@ -1,17 +1,27 @@
 // bower:scss
+@import "bower_components/susy/sass/_susy.scss";
+@import "bower_components/sassy-maps/sass/_sassy-maps.scss";
+@import "bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
+
 // endbower
 
 // Libraries
 @import "../bower_components/susy/sass/susy";
 @import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
+$mobile-width: 600px;
+$tablet-width: 768px;
+
 // Utility
 @import "fonts";
 @import "colors";
 @import "mixins";
+@import "sprites";
 @import "grid";
 @import "bxslider";
 @import "cranetip";
+@import "popup";
+@import "calendar";
 
 // Partials
 @import "social";
@@ -72,14 +82,19 @@ html, body {
     z-index: 100;
 }
 
-
 .main-content {
     margin-top: 0px;
     padding: 40px 0 100px;
+    a {
+        color: $color-light-green;
+        &:active,
+        &:visited {
+            color: $color-light-green;
+        }
+    }
 }
 
-
-@media screen and (max-width: 760px) {
+@media screen and (max-width: $tablet-width) {
     .main-content {
         margin-top: 0px;
         padding-top: 85px;
@@ -94,5 +109,39 @@ html, body {
     clear: both;
 }
 
+.age-verification {
+    position: relative;
+    background: $color-dark-green;
+    padding: 20px;
+    width: auto;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    h1 {
+        margin: 15px 0 25px;
+    }
+    a {
+        text-transform: uppercase;
+        color: $color-cream;
+        border: 3px solid $color-cream;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin: 15px 30px;
+        font-size: 1.5em;
 
-
+        &:active,
+        &:visited {
+            color: $color-cream;
+        }
+        &:hover {
+            color: $color-cream;
+            background-color: $color-light-green;
+        }
+    }
+    button {
+        display: none;
+    }
+}
